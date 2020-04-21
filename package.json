@@ -8,9 +8,18 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "codemirror": "^5.53.2",
     "core-js": "^3.6.4",
+    "jquery": "^3.5.0",
+    "p5": "^1.0.0",
+    "popper.js": "^1.16.1",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
+    "vue-codemirror": "^4.0.6",
     "vue-router": "^3.1.6",
     "vuex": "^3.1.3"
   },
