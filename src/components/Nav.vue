@@ -1,9 +1,10 @@
 <template lang="pug"> 
-  nav#nav
+  nav#nav(:class="{transparent: $route.path=='/'}")
     .container-fluid.pt-3
       .d-float.float-left
         router-link(to="/")
-          b 墨雨設計 Monoame Design
+          span 墨雨設計 
+          span Monoame Design
       .d-float.float-right
         router-link(to="/about") 
           span.eng About
@@ -38,6 +39,9 @@ nav
   top: 0
   left: 0 
   width: 100%
+  * 
+    transition: 1s
+  transition: 1s
 
   b
     font-size: 1.3rem
@@ -49,5 +53,9 @@ nav
       padding-left: 10px
       padding-right: 10px
       // margin-right: 30px
+  &.transparent
+    *
+      color: white
+    background-color: rgba(black,0.9)
 
 </style>

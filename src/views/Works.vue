@@ -1,7 +1,7 @@
 <template lang="pug">
   .page-works
-    .container-fluid
-      .row.works
+    .container
+      .row
         .projbox.col-lg-6.col-md-12(v-for="(proj,wid) in works",v-show="wid<show_num",:key="wid")
           router-link.workitem_inner(
                       :to='"works/"+proj.id'
@@ -75,13 +75,12 @@ export default {
 
 $colorBlue: #A8D3D2
 .page-works
-  padding-top: 50px
+  padding-top: 60px
+  overflow-x: hidden
   // background: linear-gradient(0.01deg, transparent 99%,(rgba(black,0.1)) 100%)
   // background-size: 100vw 20vh
 
 .projbox
-  padding: 60px
-
   color: white
 
   cursor: pointer
@@ -89,9 +88,10 @@ $colorBlue: #A8D3D2
   // border-radius: 30px
   // padding: 10px
   // height: 400px
-  padding: 0
+  border: solid 20px white
+  box-sizing: border-box
+
   margin-top: 0
-  align-items: flex-start
   outline: none
 
   h3,h5
@@ -107,6 +107,7 @@ $colorBlue: #A8D3D2
 
   .workitem_inner
     display: block
+    width: 100%
 
     padding-bottom: 66.6%
   .ratio-wrapper
@@ -124,7 +125,7 @@ $colorBlue: #A8D3D2
     background-size: cover
     background-position: center center
     transition: 0.5s
-    box-shadow: -5px 5px 30px rgba(black,0.6)
+    // box-shadow: -5px 5px 30px rgba(black,0.6)
   .blackmask
     position: absolute
     width: 100%

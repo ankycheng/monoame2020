@@ -32,6 +32,16 @@ Vue.use(VueRouter)
     component: () => import(/* webpackChunkName: "course" */ '../views/Tutorial.vue')
   },
   {
+    path: '/Lab',
+    name: 'Lab',
+    component: () => import(/* webpackChunkName: "Lab" */ '../views/Lab.vue')
+  },
+  {
+    path: '/Blog',
+    name: 'Blog',
+    component: () => import(/* webpackChunkName: "Blog" */ '../views/Blog.vue')
+  },
+  {
     path: '/contact',
     name: 'Contact',
     component: () => import(/* webpackChunkName: "contact" */ '../views/Contact.vue')

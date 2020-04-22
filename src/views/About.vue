@@ -1,6 +1,8 @@
 <template lang="pug">
   .page.page-about
     section
+      CodeArea(v-model="p5code", :hidecode="true")
+    section
       .container
         h1 工作室理念
         h4 探索藝術與工程的邊界 創造極致的互動體驗
@@ -19,7 +21,7 @@
           li 生成式聲音
     section.section-member
       .container
-        h3 團隊成員
+        h2 團隊成員
         h5 吳哲宇
         img(src="/img/cheyuwu.jpg")
         h6 Founder / Interaction Designer / Creative Technologist
@@ -42,10 +44,72 @@
         li 中科院
         li 台大創新設計學院
 </template>
+<script>
+
+import CodeArea from '@/components/CodeArea'
+let p5code = `
+var colors = "52489c-4062bb-59c3c3-ebebeb-f45b69".split("-").map(a=>"#"+a)
+function setup() {
+	createCanvas(windowWidth,windowHeight);
+	background(0);
+	fill(30)
+	rect(0,0,width,height)
+	noStroke()
+	
+	drawingContext.shadowColor = color(0, 0, 0,30);
+	drawingContext.shadowBlur =20;
+	drawingContext.shadowOffsetX = 5;
+	drawingContext.shadowOffsetY = -5;
+}
+
+function draw() {
+	translate(width/2,height/1.5)
+	let cSpan = 100
+	let c1 = (int(frameCount/cSpan))% 5
+	let c2 = (int(frameCount/cSpan)+1) % 5
+	let ratio = (frameCount/cSpan-int(frameCount/cSpan))
+	strokeWeight(2)
+	// fill(255,50)
+	for(var i=0;i<50;i++){
+		push()
+		// noFill()
+		fill(lerpColor( color(colors[c1]),color(colors[c2]), ratio ))
+		rotate(frameCount/(50+10*log(frameCount))+i/20)
+		let dd = frameCount/(5+i)+frameCount/5+sin(i)*50
+		translate( random(dd/2,dd),0)
+		
+		let x = noise(frameCount/50+i/50,5000)*80 + random(50)
+		let y = noise(frameCount/50+i/50,10000)*80 + random(50)
+		// scale(noise(x,y,i)*2)
+		
+		let rr =random(1,8-log(frameCount)/10)
+		ellipse(x,y,rr,rr)
+		pop()
+	}
+	// ellipse(mouseX, mouseY, 20, 20);
+}
+`
+export default {
+  data(){
+    return {
+      p5code: p5code
+    }
+
+  },
+  components: {
+    CodeArea
+  },
+}
+</script>
+
+
 <style lang="sass">
-.section-member
-  img
-    filter: saturate(0%)
-    width: 250px
+.page-about
+  iframe
+    height: 450px
+  .section-member
+    img
+      filter: saturate(0%)
+      width: 250px
 
 </style>

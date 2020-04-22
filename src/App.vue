@@ -24,6 +24,12 @@ html,body
   margin: 0
   padding: 0
   font-family: 'Noto Sans TC', sans-serif
+section
+  margin-top: 50px
+  &:nth-child(1)
+    margin-top: 0
+.container
+  max-width: 1200px
 h1,h2,h3,h4,h5,h6
   margin-top: 2rem
 img
@@ -31,6 +37,7 @@ img
 .page
   padding-top: 60px
   min-height: 100vh
+  padding-bottom: 60px
 a
   color: black
 </style>
