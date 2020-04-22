@@ -1,5 +1,5 @@
 <template lang="pug">
-  .page-works
+  .page.page-works
     .container
       .row
         .projbox.col-lg-6.col-md-12(v-for="(proj,wid) in works",v-show="wid<show_num",:key="wid")
@@ -77,6 +77,8 @@ $colorBlue: #A8D3D2
 .page-works
   padding-top: 60px
   overflow-x: hidden
+  background-color: black
+  color: white
   // background: linear-gradient(0.01deg, transparent 99%,(rgba(black,0.1)) 100%)
   // background-size: 100vw 20vh
 
@@ -88,7 +90,7 @@ $colorBlue: #A8D3D2
   // border-radius: 30px
   // padding: 10px
   // height: 400px
-  border: solid 20px white
+  border: solid 20px black
   box-sizing: border-box
 
   margin-top: 0
@@ -156,8 +158,9 @@ $colorBlue: #A8D3D2
     position: absolute
     right: 0
     top: 0
-    margin-top: 80px
-    color: $colorBlue
+    margin-top: 20px
+    margin-right: 20px
+    color: white
     // opacity: 0.5
     font-size: 15px
     margin-top: 10px

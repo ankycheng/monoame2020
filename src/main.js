@@ -12,7 +12,7 @@ import 'codemirror/lib/codemirror.css'
 // import 'font-awesome/css/all.css'
 
 import CodeArea from './components/CodeArea'
-Vue.component("codearea",CodeArea)
+Vue.component("CodeArea",CodeArea)
 
 
 Vue.config.productionTip = false

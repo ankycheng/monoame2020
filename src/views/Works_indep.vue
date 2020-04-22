@@ -1,5 +1,5 @@
 <template lang="pug">
-.page-work-indep.pt-5
+.page.page-work-indep.pt-5
   router-link.back_btn.animated.delat-ani-30.slideInLeft(to="/works" )
     i.fa.fa-angle-left
   .container
@@ -72,10 +72,11 @@ export default {
 </script>
 
 <style lang="sass">
+
 $colorBlue: #A8D3D2
 .page-work-indep
   .projbox
-    height: 400px
+    //- height: 400px
   .img_wrap
     padding-bottom: 50%
     display: flex

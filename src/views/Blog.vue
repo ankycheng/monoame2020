@@ -3,6 +3,26 @@
     .container
       .row
         .col-12
-          h1 文章
+          h1 文章分享
+      a.row.mt-5(href="https://medium.com/%E8%80%81%E9%97%86%E4%BE%86%E9%BB%9E%E5%AF%87%E6%B1%80%E5%90%A7/%E5%BE%9E%E4%B8%8D%E5%8F%AA%E6%98%AF%E4%B8%80%E9%96%80%E7%B7%9A%E4%B8%8A%E8%AA%B2%E7%A8%8B-%E8%80%8C%E6%98%AF%E4%B8%80%E5%A0%B4%E6%8E%A8%E5%8B%95%E9%80%B2%E5%8C%96%E7%9A%84%E8%B1%AA%E8%B3%AD-2016%E8%88%8A%E6%96%87%E6%95%B4%E7%90%86-48d90fee113a?source=---------5------------------" target="_blank")
+        .col-sm-3
+          img(src='https://miro.medium.com/fit/c/604/182/1*EOfJWbiq8tAoL-v6B1bxUw.png')
+        .col-sm-9
+          h4 從不只是一門線上課程，而是一場推動進化的豪賭
+          p 在課程上線滿一個月的這天，啜著咖啡看到人數已逐漸來到了1667人，整理著每天到三四點睡留下來的瓶瓶罐罐跟咖啡杯，試圖留下些什麼紀錄，回神才發現準備課程這段漫長的道路已接近了尾聲，便打起了草稿想把這一切曲折離奇、燃燒生命的光芒記下
+
+      a.row.mt-5(href="https://medium.com/%E8%80%81%E9%97%86%E4%BE%86%E9%BB%9E%E5%AF%87%E6%B1%80%E5%90%A7/%E9%87%80%E9%80%A0%E4%B8%80%E9%96%80%E7%B5%90%E5%90%88%E7%B6%B2%E9%A0%81-%E8%A8%AD%E8%A8%88-%E6%95%B8%E5%AD%B8%E8%88%87%E7%89%B9%E6%95%88%E7%9A%84%E7%B7%9A%E4%B8%8A%E7%A8%8B%E5%BC%8F%E8%AA%B2%E7%A8%8B-cef5d998c707?source=---------2------------------", target="_blank")
+        .col-sm-3
+          img(src='https://miro.medium.com/max/1100/1*Ka6ZHFg7dTxlcydjlgALIg.png')
+        .col-sm-9
+          h4 釀造一門結合網頁、設計、數學與特效的線上程式課程
+          p 就在不久前的2017/8–2018/8，我花了整整一年時間，在Hahow製作我的第二門線上課程，這不只是一門線上課程，而是把我對線上課程的想像再做好做滿、做爆，做到未曾有人嘗試的東西，也希望他能夠在深度、廣度上完整超過第一堂「動態互動網頁程式入門」。
+      a.row.mt-5(href="https://medium.com/%E8%80%81%E9%97%86%E4%BE%86%E9%BB%9E%E5%AF%87%E6%B1%80%E5%90%A7/%E5%9C%A8%E7%B4%90%E7%B4%84%E5%A4%A7%E5%AD%B8%E8%AE%80%E7%A0%94%E7%95%B6%E5%8A%A9%E6%95%99%E7%9A%84%E9%80%B2%E5%8C%96%E6%97%A5%E8%AA%8C-b5f0d604201a?source=---------4------------------", target="_blank")
+        .col-sm-3
+          img(src='https://miro.medium.com/fit/c/770/231/1*3r_GFfwHRUDdb80tgmyfcg.png')
+        .col-sm-9
+          h4 在紐約大學讀研當助教的進化日誌
+          p 就在不久前的2017/8–2018/8，我花了整整一年時間，在Hahow製作我的第二門線上課程，這不只是一門線上課程，而是把我對線上課程的想像再做好做滿、做爆，做到未曾有人嘗試的東西，也希望他能夠在深度、廣度上完整超過第一堂「動態互動網頁程式入門」。
+  
   
 </template>

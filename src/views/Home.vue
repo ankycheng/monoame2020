@@ -5,7 +5,6 @@
 
 <script>
 // @ is an alias to /src
-import CodeArea from '@/components/CodeArea'
 let p5code = `
 let colors = "f98227-f4e04d-f2ed6f-cee397-8db1ab-587792-fff".split("-").map(a=>"#"+a)
 
@@ -122,7 +121,6 @@ function draw() {
 		stroke(255,200)
 		noFill()
 		strokeWeight(2)
-		rect(width/2,height/2,width-30,height-30)
 		stroke(0)
 		strokeWeight(5)
 		rect(0,0,60,60)
@@ -142,9 +140,6 @@ export default {
       p5code: p5code
     }
 
-  },
-  components: {
-    CodeArea
   },
   mounted(){
 

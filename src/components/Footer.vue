@@ -3,18 +3,25 @@
     .container
       .row
         .col-6
-          p © Monoame Design 墨雨設計
+          p © Monoame Design 墨雨設計 2020 | All Rights Reserved
           p 
-            | monoamedesign@gmail.com |　+ 886 912028693
+            | monoamedesign@gmail.com
             br
             | 相關職缺 | Jobs
             br
             | 隱私權條款 | Privacy Policy
-        .col-6
-          p FaceBook
-          p Instagram
-          p 老闆來點寇汀吧！
-          p Hahow 相關課程
+        .col-6(style="border-left: solid 1px white;padding-left: 50px")
+          a(href="https://www.facebook.com/MonoameDesign/" target="_blank")
+            i.fa.fa-facebook(style='width: 20px')
+            span  墨雨設計粉專
+          br
+          a(href="https://www.instagram.com/bosscodingplease/" target="_blank")
+            i.fa.fa-instagram(style='width: 20px')
+            span  老闆來點寇汀吧！
+          br
+          a(href="https://hahow.in/@majer?tr=majer" target="_blank") Hahow 互動網頁課程
+          br
+          a(href="https://creativecoding.in/" target="_blank") Creative Coding.in
 </template>
 <style lang="sass">
 footer
@@ -22,5 +29,9 @@ footer
   padding-bottom: 50px
   background-color: #000
   color: white
+  a
+    color: white
+    vertical-align: center
+    margin-top: 10px
   // margin-top: 50px
 </style>
