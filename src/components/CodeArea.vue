@@ -16,6 +16,16 @@ export default {
   props: [
     "value", "hidecode"
   ],
+  mounted(){
+    let _this = this
+    var timer
+    window.addEventListener('resize',()=>{
+      clearTimeout(timer)
+      timer = setTimeout(()=>{
+        _this.restartCode()
+      },500)
+    })
+  },
   watch(){
     value: {
     }
