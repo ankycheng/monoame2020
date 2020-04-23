@@ -75,9 +75,9 @@ function draw() {
   g.push()
   g.translate(0,0)
   g.scale(0.5)
-  g.rotateX(mouseX/100 + rotationX)
-  g.rotateY(mouseY/100 +rotationY)
-  g.rotateZ(rotationZ)
+  g.rotateX(mouseX/100 + rotationX/360*PI*2)
+  g.rotateY(mouseY/100 +rotationY/360*PI*2)
+  g.rotateZ(rotationZ/360*PI*2)
 	for(var i=0;i<width;i+=span){
 		for(var o=0;o<height;o+=span){
 
