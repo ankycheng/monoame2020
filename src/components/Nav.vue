@@ -45,13 +45,14 @@ export default {
 <style lang="sass">
 nav
   border-bottom: 1px solid #000
-  height: 60px
+  height: 80px
   background-color: #fff
   z-index: 10
   position: fixed
   top: 0
   left: 0 
   width: 100%
+  padding-top: 24px
 
   img
     background-color: rgba(black,0.6)
@@ -86,14 +87,16 @@ i.fa.fa-bars
   display: none
   position: fixed
   right: 30px
-  top: 30px
+  // top: 30px
   font-size: 2rem
   cursor: pointer
     
-@media screen and (max-width: 600px)
+@media screen and (max-width: 950px)
   nav
     position: fixed
     z-index: 900
+    height: 60px
+    padding-top: 0
   i.fa.fa-bars
     display: block
   //.eng
@@ -115,6 +118,7 @@ i.fa.fa-bars
     opacity: 0
     pointer-events: none
     transition: 0.5s
+    padding-bottom: 15vh
     *
       vertical-align: middle
     &.active

@@ -1,7 +1,7 @@
 <template lang="pug">
   .page.page-about
     section
-      CodeArea(v-model="p5code", :hidecode="true")
+      CodeArea(v-model="p5code", :hidecode="true" ,:enableMotion="true")
     section.section-vision
       .container
         h2 創造、探索、想像
@@ -60,18 +60,11 @@
 <script>
 
 let p5code = `let aa = "ffaf87-ff8e72-ed6a5e-4ce0b3-377771".split("-").map(a=>"#"+a)
-let materials = []
 let g
 function setup() {
 	createCanvas(windowWidth, windowHeight);
     g = createGraphics(width,height,WEBGL)
 	background(0);
-	materials = aa.map(clr=>{
-		let g = createGraphics(100,100)
-		g.background(clr)
-		return g
-	})
-	noStroke()
 }
 let span = 40
 
@@ -82,13 +75,14 @@ function draw() {
 	// camera(0,0,0, mouseX,mouseY,0, 0, 1, 0);
 	// colorMode(HSB)
 	// strokeWeight(3)
-  background(0,20)
+  background(0,150)
   g.clear(0,0,width,height)
   g.push()
   g.translate(0,0)
   g.scale(0.5)
-  g.rotateX(mouseX/100)
-  g.rotateY(mouseY/100)
+  g.rotateX(mouseX/100 + rotationX/360*PI*2)
+  g.rotateY(mouseY/100 +rotationY/360*PI*2)
+  g.rotateZ(rotationZ/360*PI*2)
 	for(var i=0;i<width;i+=span){
 		for(var o=0;o<height;o+=span){
 
@@ -106,10 +100,13 @@ function draw() {
 				g.pop()
 			}
 		}
-	}
+  }
+  
+
   g.pop()
-    image(g,0,0)
-	
+
+  image(g,0,0)
+  
 }
 `
 export default {
