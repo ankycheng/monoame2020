@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.a42cce9ef6ef61b11d19099c11674d24.js"
+  "/precache-manifest.a57632657c1d2597a7158ecf1022aff2.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "monoame2020"});
