@@ -44,12 +44,15 @@ class Particle{
 		this.c =  color(random(0,255),255,255)
 		this.r =  random(1,50)
 		this.freq = random(2,20)
+		this.alive = true
 	}
 	update(){
 		this.p.add(this.v)
 		this.v.add(this.a)
 		this.r*=0.99
-
+		if (this.p.x<-200 || this.p.x>width+200 || this.p.y<-200 || this.p.y>height+200){
+			this.alive=false
+		}
 	}
 	draw(){
 		graphic.stroke(0)
@@ -87,12 +90,17 @@ function draw() {
 		p5.Vector.random2D().mult(random(0,0.3)),
 		p5.Vector.random2D().mult(random(0,0.1)),
 	))
+	particles = particles.filter(p=>p.alive)
 								 
 	image(graphic,0,5)
 	graphic.background(0,4)
 	
 	// graphic.rect(0,0,width,2)
 	graphic.image(graphic,0,2)
+	
+  fill(255)
+  //text(accelerationX+","+accelerationY+","+accelerationZ,50,50)
+  //text(rotationX+","+rotationY+","+rotationZ,50,100)
 	
 }
 `

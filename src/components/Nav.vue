@@ -52,6 +52,7 @@ nav
   top: 0
   left: 0 
   width: 100%
+  padding-top: 24px
 
   img
     background-color: rgba(black,0.6)
@@ -94,6 +95,7 @@ i.fa.fa-bars
   nav
     position: fixed
     z-index: 900
+    padding-top: 0
   i.fa.fa-bars
     display: block
   //.eng
@@ -115,6 +117,7 @@ i.fa.fa-bars
     opacity: 0
     pointer-events: none
     transition: 0.5s
+    padding-bottom: 15vh
     *
       vertical-align: middle
     &.active

@@ -19,7 +19,9 @@
             i.fa.fa-instagram(style='width: 20px')
             span  老闆來點寇汀吧！
           br
-          a(href="https://hahow.in/@majer?tr=majer" target="_blank") Hahow 互動網頁課程
+          a(href="https://hahow.in/@majer?tr=majer" target="_blank") Hahow 互動網頁動畫 / 特效課程
+          br
+          a(href="http://2017.awiclass.monoame.com/proj/2?utm=monoame_website_footer" target="_blank") Hahow 學生作品集
           br
           a(href="https://creativecoding.in/" target="_blank") Creative Coding.in
 </template>
