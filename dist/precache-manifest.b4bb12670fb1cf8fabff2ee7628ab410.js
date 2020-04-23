@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/animate.css"
   },
   {
-    "revision": "2e46d8485cd064b6dedc",
-    "url": "/css/app.850b265f.css"
+    "revision": "4fb1f3fcbcc5ff2579f5",
+    "url": "/css/app.6f0eb6e9.css"
   },
   {
     "revision": "4696fef5e6cd1cd65c54",
@@ -20864,11 +20864,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/class3.png"
   },
   {
+    "revision": "90f591a57aa72bc8b75e285ffff841e3",
+    "url": "/img/favicon.png"
+  },
+  {
     "revision": "7da8ce49e16ca12d1de43d811eefa7ae",
     "url": "/img/tutorial_meeting.jpg"
   },
   {
-    "revision": "aa0ea2f2b0b40e47a5b2221296774595",
+    "revision": "35e4f8d440153bb11e9990dd202b90c8",
     "url": "/index.html"
   },
   {
@@ -20884,8 +20888,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/about.67c3c34e.js"
   },
   {
-    "revision": "2e46d8485cd064b6dedc",
-    "url": "/js/app.61825abd.js"
+    "revision": "4fb1f3fcbcc5ff2579f5",
+    "url": "/js/app.1702f30c.js"
   },
   {
     "revision": "4696fef5e6cd1cd65c54",

@@ -2,7 +2,7 @@
   footer
     .container
       .row
-        .col-6
+        .col-sm-6
           p © Monoame Design 墨雨設計 2020 | All Rights Reserved
           p 
             | monoamedesign@gmail.com
@@ -10,7 +10,7 @@
             | 相關職缺 | Jobs
             br
             | 隱私權條款 | Privacy Policy
-        .col-6(style="border-left: solid 1px white;padding-left: 50px")
+        .col-sm-6(style="border-left: solid 1px white;padding-left: 50px")
           a(href="https://www.facebook.com/MonoameDesign/" target="_blank")
             i.fa.fa-facebook(style='width: 20px')
             span  墨雨設計粉專

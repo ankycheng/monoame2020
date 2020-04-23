@@ -4,14 +4,34 @@
       CodeArea(v-model="p5code", :hidecode="true")
     .container
       .row
-        .col-12
+        .col-sm-6
           h1 聯絡我們
           p 請留下您的相關需求或寄至我們信箱，我們會盡快回覆您Mail
           p 
             | Mail: monoamestudio@gmail.com
             br
             | Facebook 粉專：墨雨設計
-  
+        .col-sm-6.pt-5
+          form(action="https://formspree.io/xvobebgr",method='POST')
+            .form-group
+              label
+              | 信箱 Email
+              input.form-control(type='email' name='_replyto' )
+            .form-group
+              label
+              | 聯絡人 Contact person
+              input.form-control(type='text' name='name' )
+            .form-group
+              label
+              | 公司 Company
+              input.form-control(type='text' name='company' )
+            .form-group
+              label
+              | 訊息 Message
+              textarea.form-control(name='message' rows="5")
+            .form-group
+              button.btn.btn-secondary(type="submit" value="Send") 送出
+
 </template>
 <script>
 
@@ -88,4 +108,15 @@ export default {
 <style lang="sass">
 iframe
   height: 400px
+.page-contact
+  label
+    display: block
+    margin-bottom: 15px
+  input,textarea
+    margin-top: 10px
+    background-color: transparent
+    border: solid 2px white
+    color: white
+    font-weight: 300
+
 </style>
